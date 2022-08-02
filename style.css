@@ -1,0 +1,110 @@
+body {
+   background-color: #57b9ea;
+   display: flex;
+   justify-content: center;
+   font-family: 'Mukta', sans-serif;
+}
+
+.players {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 7px;
+    border-radius: 5px;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.players span {
+    color: #57b9ea;
+    width: 100%;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: default;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+.players span:first-child {
+    color: #FFFFFF;
+}
+
+.players.active span:first-child {
+    color: #57b9ea;
+}
+
+.players.active span:nth-child(2) {
+    color: #FFFFFF;
+}
+
+.players.active .slider {
+    left: 50%;
+}
+
+.slider {
+    position: absolute;
+    top: 7.5%;
+    left: 0;
+    height: 85%;
+    left: 2.5%;
+    width: 47%;
+    background: #57b9ea;
+    border-radius: 5px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5%;
+}
+
+.box {
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    margin: 2px 2px;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: #E5E5E5;
+}
+
+.row {
+    display: flex;
+}
+
+.winner {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -10% 0 8% 0;
+}
+
+.winnerMessage {
+    color: white;
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    background-color:  white;
+    border: solid 2px #57b9ea;
+    padding: 10px;
+    border-radius: 13px;
+    color: #57b9ea;
+    font-weight: 600;
+}
+
+
