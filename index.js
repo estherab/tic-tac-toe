@@ -8,8 +8,8 @@ const init = () => {
         let img = document.createElement("img");
 
         turn === "X"
-          ? img.setAttribute("src", "./images/x.png")
-          : img.setAttribute("src", "./images/o.png");
+          ? img.setAttribute("src", "./x.png")
+          : img.setAttribute("src", "./o.png");
 
         event.target.appendChild(img);
 
